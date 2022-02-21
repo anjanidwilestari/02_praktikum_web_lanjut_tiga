@@ -31,4 +31,10 @@ Route::prefix('category')->group(function () {
 });
 
 Route::get('/news/{date}', [NewsController::class, 'berita']);
+
+Route::prefix('program')->group(function () {
+    Route::get('/baju', [ProductsController::class, 'fashionclass']);
+    Route::get('/rok', [ProductsController::class, 'fashionmuseum']);
+    Route::get('/sepatu', [ProductsController::class, 'fashioncharity']);
+});
    
