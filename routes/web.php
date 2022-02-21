@@ -20,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::pattern('date', '[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])'); //Filter Parameter GET by date yyyy-mm-dd
+
 Route::get('/', [HomeController::class, 'home']);
 
 Route::prefix('category')->group(function () {
@@ -28,5 +30,5 @@ Route::prefix('category')->group(function () {
     Route::get('/sepatu', [ProductsController::class, 'sepatu']);
 });
 
-Route::get('/news{id}', [NewsController::class, 'berita']);
+Route::get('/news/{date}', [NewsController::class, 'berita']);
    
