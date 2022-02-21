@@ -11,7 +11,7 @@ class ProductsController extends Controller
         echo '<h3 style="color: red;">Baju Olahraga Elastis Cantik</h3>';
     }
     public function rok(){
-        echo '<img src="https://filebroker-cdn.lazada.co.id/kf/H5265fb9d06644454acb8b077e829d4e3Y.jpg" alt="rok" heigt="500"/>';
+        echo '<img src="https://filebroker-cdn.lazada.co.id/kf/H5265fb9d06644454acb8b077e829d4e3Y.jpg" alt="rok" height="500"/>';
         echo '<h3 style="color: red;">Rok Olahraga Super Nyaman</h3>';
     }
     public function sepatu(){
