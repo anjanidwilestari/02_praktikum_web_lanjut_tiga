@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,6 @@ Route::prefix('category')->group(function () {
     Route::get('/rok', [ProductsController::class, 'rok']);
     Route::get('/sepatu', [ProductsController::class, 'sepatu']);
 });
+
+Route::get('/news{id}', [NewsController::class, 'berita']);
    
