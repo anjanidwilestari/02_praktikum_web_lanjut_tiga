@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\ProgramController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,8 +34,8 @@ Route::prefix('category')->group(function () {
 Route::get('/news/{date}', [NewsController::class, 'berita']);
 
 Route::prefix('program')->group(function () {
-    Route::get('/baju', [ProductsController::class, 'fashionclass']);
-    Route::get('/rok', [ProductsController::class, 'fashionmuseum']);
-    Route::get('/sepatu', [ProductsController::class, 'fashioncharity']);
+    Route::get('/fashionclass', [ProgramController::class, 'fashionclass']);
+    Route::get('/fashionmuseum', [ProgramController::class, 'fashionmuseum']);
+    Route::get('/fashioncharity', [ProgramController::class, 'fashioncharity']);
 });
    
