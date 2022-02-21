@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function halamanHome(){
+    public function home(){
         echo "Selamat Datang di Website Educationz";
     }
 }
