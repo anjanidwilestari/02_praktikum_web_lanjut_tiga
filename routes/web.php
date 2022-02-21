@@ -38,4 +38,6 @@ Route::prefix('program')->group(function () {
     Route::get('/fashionmuseum', [ProgramController::class, 'fashionmuseum']);
     Route::get('/fashioncharity', [ProgramController::class, 'fashioncharity']);
 });
+
+Route::resource('contactus', ContactController::class);
    
